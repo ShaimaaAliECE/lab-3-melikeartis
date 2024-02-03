@@ -1,23 +1,32 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace Lab3App
 {
     internal class Diamond : Treasure
     {
-        public int Value { get; set; }
+        private string name;
+        private int Score;
 
-        public Diamond(string description, int score) : base(description, score)
+        public Diamond(string name, int score)
         {
+            this.name = name;
+            this.Score = score;
         }
-
+        public override void AddMe(List<Collectable> list)
+        {
+            Console.WriteLine(name + " Collected, Congrats!!!!");
+            UpdateTotalScore();
+            list.Add(this);
+        }
         public override void Display()
         {
-            Console.WriteLine($"Diamond{Description} is displayed");
+            Console.WriteLine("Diamond" + name + " is displayed");
         }
-
-        public override void UpdateTotalValue()
+        public override void UpdateTotalScore()
         {
-            Board.UpdateTotalValue(Value); // Use Board property to update the value
+            CollectionBoard.TotalScore += Score;
+            Console.WriteLine("Total Score is uodated to: " + CollectionBoard.TotalScore);
         }
     }
 }
-

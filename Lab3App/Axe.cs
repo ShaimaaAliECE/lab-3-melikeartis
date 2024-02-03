@@ -5,15 +5,21 @@ namespace Lab3App
 {
     internal class Axe : Tool
     {
-        public Axe(string description) : base(description)
+        private string name;
+        public Axe(string name)
         {
+            this.name = name;
         }
-
+        public override void AddMe(List<Collectable> list)
+        {
+            Console.WriteLine(name + " Collected, Congrats!!!");
+            list.Add(this);
+            DoAction();
+        }
         public override void Display()
         {
-            Console.WriteLine($"Axe {Description} is displayed");
+            Console.WriteLine("Axe " + name + " is displayed");
         }
-
         public override void DoAction()
         {
             Console.WriteLine("Axe is Used");

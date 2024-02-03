@@ -1,24 +1,43 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace Lab3App
 {
     internal class Coin : Treasure
     {
-        public int Value { get; set; }
+        private string name;
+        private int value;
 
-        public Coin(string description, int score, int value) : base(description, score)
+        public Coin(string name, int score, int value)
         {
-            Value = value;
+            this.name = name;
+            this.Score = score;
+            this.value = value;
         }
 
         public override void Display()
         {
-            Console.WriteLine($"Coin {Description} is displayed");
+            Console.WriteLine("Coin " + name + " is displayed");
         }
 
-        public override void UpdateTotalValue()
+        public override void AddMe(List<Collectable> list)
         {
-            Board.UpdateTotalValue(Value); // Use Board property to update the value
+            Console.WriteLine(name + " Collected, Congrats!!!!");
+            list.Add(this);
+            UpdateTotalScore();
+            UpdateTotalValue();
+        }
+
+        public void UpdateTotalValue()
+        {
+            CollectionBoard.TotalValue += value;
+            Console.WriteLine("Total Value is updated to: " + CollectionBoard.TotalValue);
+        }
+
+        public override void UpdateTotalScore()
+        {
+            CollectionBoard.TotalScore += Score;
+            Console.WriteLine("Total Score is updated to: " + CollectionBoard.TotalScore);
         }
     }
 }
-

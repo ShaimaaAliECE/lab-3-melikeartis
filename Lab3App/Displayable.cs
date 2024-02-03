@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Lab3App
 {
-    internal interface Displayable
+    interface Displayable
     {
         void Display();
     }

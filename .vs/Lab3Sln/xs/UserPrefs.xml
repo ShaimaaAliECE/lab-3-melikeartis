@@ -1,16 +1,24 @@
 ﻿<Properties StartupConfiguration="{F8D03A7A-BFDF-4CDB-8840-ACC9EA70E485}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Lab3App PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Lab3App/Axe.cs">
     <Files>
-      <File FileName="Lab3App/Axe.cs" Line="1" Column="1" />
+      <File FileName="Lab3App/Coin.cs" Line="38" Column="2" IsPinned="True" />
+      <File FileName="Lab3App/Axe.cs" Line="18" Column="10" />
+      <File FileName="Lab3App/Collectable.cs" Line="12" Column="36" />
+      <File FileName="Lab3App/CollectionBoard.cs" Line="26" Column="2" />
+      <File FileName="Lab3App/Diamond.cs" Line="16" Column="39" />
+      <File FileName="Lab3App/Displayable.cs" Line="10" Column="1" />
+      <File FileName="Lab3App/MagicWand.cs" Line="23" Column="1" />
+      <File FileName="Lab3App/Program.cs" Line="62" Column="1" />
+      <File FileName="Lab3App/Tool.cs" />
+      <File FileName="Lab3App/Treasure.cs" />
+      <File FileName="Lab3App/App.config" Line="1" Column="1" />
+      <File FileName="Lab3App/Properties/AssemblyInfo.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Lab3Sln">
-            <Node name="Lab3App" expanded="True">
+            <Node name="Lab3App">
               <Node name="References" expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="Axe.cs" selected="True" />
@@ -21,7 +29,10 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Lab3App PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
